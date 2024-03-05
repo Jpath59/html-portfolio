@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>General Interest Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Interest Form</h1>
+    <p id="description">General Interest Form Project</p>
+    <form id="survey-form" method="post" action=''>
+      <fieldset>
+        <label for="name" for="name-label" id="name-label" placeholder="">Enter your name: <input id="name" type="text" required /></label>
+        <label for="email" for="email-label" id="email-label" placeholder="">Enter your Email: <input id="email" type="email" required/></label>
+        <label for="number" for="number-label" id="number-label" placeholder="jdoe">Enter your ID: <input id="number" type="number" min="00000000" max="99999999"/></label>
+      </fieldset>
+
+      <fieldset>
+        <label for="grade" for="grade-label" id="grade-label">Grade?</label> 
+        <select name="dropdown" id="dropdown">
+          <option value="g0">select one</option>
+          <option value="g1">Freshman</option>
+          <option value="g2">Sophmore</option>
+          <option value="g3">Junior</option>
+          <option value="g4">Senior</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <label for="future-events">Are you interested in any future events?</label>
+        <label><input id="yes" type="radio" name="yn" value="Yes" checked/>Yes</label>
+        <label><input id="no" type="radio" name="yn" value="No"/>No</label>
+        <label for="events">Which ones?</label>
+        <label for="event1" id="event1">Event 1 <input type="checkbox" value="Event 1"/></label>
+        <label for="event2" id="event2">Event 2 <input type="checkbox" value="Event 2"/></label>
+        <label for="event3" id="event3">Event 3 <input type="checkbox" value="Event 3"/></label>
+        <label for="event4" id="event4">Event 4 <input type="checkbox" value="Event 4"/></label>
+
+
+      </fieldset>
+      
+      <fieldset>
+        <label for="questions">Any questions or concerns?</label>
+        <textarea>
+
+        </textarea>
+      </fieldset>
+      <input type="submit" value="Submit" id="submit"/>
+    </form>
+  </body>
+</html>
